@@ -6,13 +6,14 @@ let actualState = firstNames;
 let lastExited ="";
 let newState = [];
 
-for (let i = 0; i < (actualState.length-1); i++) {
+for (let i = 0; i < (actualState.length); i++) {
     console.log("Actual state = "+actualState);
     lastExited = actualState[0];
     console.log("Last exited = "+lastExited);
 
-    for (let j = 1; j < (actualState.length); j++) {
-          newState.push(actualState[j]);
+    for (let j = 0; j < (actualState.length -1); j++) {
+        console.log
+          newState.push(actualState[j+1]);
     }
     newState.push("");
     console.log("New state = "+newState);
