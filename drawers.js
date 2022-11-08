@@ -40,7 +40,7 @@ D. Tiroir 4
 
 const input = process.argv[2];
 
-const array = input.split(",", 10);
+const array = input.split(",");
 
 const numbers = []; 
 
@@ -54,8 +54,8 @@ let countEven = 0;
 let countOdd = 0;
 let evenNumbers =[];
 let oddNumbers =[];
-let maxEven =0;
-let maxOdd =0;
+let maxEven =-1;
+let maxOdd =-1;
 
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 == 0) {
@@ -73,4 +73,4 @@ for (let i = 0; i < numbers.length; i++) {
     }
 };
 
-console.log(`Even numbers : ${evenNumbers} (${countEven}, ${maxEven!=0 ? "the greater number is "+ maxEven : "there is no greater number"}), odd numbers : ${oddNumbers} (${countOdd}, ${maxOdd != 0 ? "the greater number is " + maxOdd : "there is no greater number"})`)
+console.log(`Even numbers : ${evenNumbers} (${countEven}, ${maxEven!=-1 ? "the greater number is "+ maxEven : "there is no greater number"}), odd numbers : ${oddNumbers} (${countOdd}, ${maxOdd != 0 ? "the greater number is " + maxOdd : "there is no greater number"})`)

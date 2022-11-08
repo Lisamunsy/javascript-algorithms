@@ -1,6 +1,6 @@
 const string = process.argv[2];
 
-const firstNames = string.split(",", 10);
+const firstNames = string.split(",");
 
 let actualState = firstNames;
 

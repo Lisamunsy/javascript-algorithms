@@ -1,6 +1,6 @@
 const input = process.argv[2];
 
-const array = input.split(",", 10);
+const array = input.split(",");
 
 const numbers = []; 
 
