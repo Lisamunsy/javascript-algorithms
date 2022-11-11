@@ -52,8 +52,8 @@ for (let i = 0; i < array.length; i++) {
 
 let countEven = 0;
 let countOdd = 0;
-let evenNumbers =[];
-let oddNumbers =[];
+const evenNumbers =[];
+const oddNumbers =[];
 let maxEven =-1;
 let maxOdd =-1;
 
